@@ -2025,7 +2025,7 @@ static NSString * const PARAGRAPH_SEPARATOR = @"\u2029";
     if (text.length == 0) {
         CGPoint origin = CGPointMake(CGRectGetMinX(self.bounds), CGRectGetMinY(self.bounds));
         UIFont *font = self.font ? self.font : [UIFont systemFontOfSize:[UIFont labelFontSize]];
-        return CGRectMake(origin.x, origin.y, CGRectGetWidth(self.caretView.bounds), font.leading);
+        return CGRectMake(origin.x, origin.y, CGRectGetWidth(self.caretView.bounds), font.lineHeight);
     }
     
     if (index >= text.length) {
